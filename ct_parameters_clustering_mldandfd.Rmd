@@ -510,7 +510,7 @@ petitpois <- ggplot(segment(ddata)) +
     annotate("text", x=-2.8, y=-2.5, label = "Age (years)", size=5, color="black")+
 
     geom_point(data = df, aes(x = x, y = -3.5, colour = q_bmi), size = 7, shape = 19)+
-    annotate("text", x=-2.8, y=-3.5, label = "BMI (kg.m^-2)", size=5, color="black")+
+    annotate("text", x=-2.8, y=-3.5, label = "BMI~(kg/m^{2})", size=5, color="black", parse = TRUE)+
 
     geom_point(data = df, aes(x = x, y = -4.5, colour = q_acq), size = 7, shape = 19)+
     annotate("text", x=-2.8, y=-4.5, label = "ACQ6 score", size=5, color="black")+
@@ -537,66 +537,66 @@ petitpois <- ggplot(segment(ddata)) +
     
     
     geom_point(data = df, aes(x = x, y = -14.5, colour = q_fd_i_up), size = 7, shape = 19)+
-    annotate("text", x=-2.8, y=-14.5, label = "FD_I-850_up", size=5, color="black")+
+    annotate("text", x=-2.8, y=-14.5, label = "FD['I-850_U']", size=5, color="black", parse = TRUE)+
     
     geom_point(data = df, aes(x = x, y = -15.5, colour = q_fd_i_lo), size = 7, shape = 19)+
-    annotate("text", x=-2.8, y=-15.5, label = "FD_I-850_lo", size=5, color="black")+
+    annotate("text", x=-2.8, y=-15.5, label = "FD['I-850_L']", size=5, color="black", parse = TRUE)+
     
     geom_point(data = df, aes(x = x, y = -17.5, colour = q_fd_e_up), size = 7, shape = 19)+
-    annotate("text", x=-2.8, y=-17.5, label = "FD_E-850_up", size=5, color="black")+
+    annotate("text", x=-2.8, y=-17.5, label = "FD['E-850_U']", size=5, color="black", parse = TRUE)+
     
     geom_point(data = df, aes(x = x, y = -18.5, colour = q_fd_e_lo), size = 7, shape = 19)+
-    annotate("text", x=-2.8, y=-18.5, label = "FD_E-850_lo", size=5, color="black")+
+    annotate("text", x=-2.8, y=-18.5, label = "FD['E-850_L']", size=5, color="black", parse = TRUE)+
     
     geom_point(data = df, aes(x = x, y = -20.5, colour = q_fd_ei_up), size = 7, shape = 19)+
-    annotate("text", x=-2.8, y=-20.5, label = "FD_E/I-850_up", size=5, color="black")+
+    annotate("text", x=-2.8, y=-20.5, label = "FD['E/I-850_U']", size=5, color="black", parse = TRUE)+
     
     geom_point(data = df, aes(x = x, y = -21.5, colour = q_fd_ei_lo), size = 7, shape = 19)+
-    annotate("text", x=-2.8, y=-21.5, label = "FD_E/I-850_lo", size=5, color="black")+
+    annotate("text", x=-2.8, y=-21.5, label = "FD['E/I-850_L']", size=5, color="black", parse = TRUE)+
     
     geom_point(data = df, aes(x = x, y = -23.5, colour = q_fd_i_bias), size = 7, shape = 19)+
-    annotate("text", x=-2.8, y=-23.5, label = "FD_I_bias", size=5, color="black")+
+    annotate("text", x=-2.8, y=-23.5, label = "FD['I-850_BIAS']", size=5, color="black", parse = TRUE)+
     
     geom_point(data = df, aes(x = x, y = -24.5, colour = q_fd_e_bias), size = 7, shape = 19)+
-    annotate("text", x=-2.8, y=-24.5, label = "FD_E_bias", size=5, color="black")+
+    annotate("text", x=-2.8, y=-24.5, label = "FD['E-850_BIAS']", size=5, color="black", parse = TRUE)+
     
     geom_point(data = df, aes(x = x, y = -25.5, colour = q_fd_ei_bias), size = 7, shape = 19)+
-    annotate("text", x=-2.8, y=-25.5, label = "FD_E/I_bias", size=5, color="black")+
+    annotate("text", x=-2.8, y=-25.5, label = "FD['E/I-850_BIAS']", size=5, color="black", parse = TRUE)+
     
     
     
     geom_point(data = df, aes(x = x, y = -27.5, colour = q_mld_i_up), size = 7, shape = 19)+
-    annotate("text", x=-2.8, y=-27.5, label = "MLD_I_up", size=5, color="black")+
+    annotate("text", x=-2.8, y=-27.5, label = "MLD[I_U]", size=5, color="black", parse = TRUE)+
     
     geom_point(data = df, aes(x = x, y = -28.5, colour = q_mld_i_lo), size = 7, shape = 19)+
-    annotate("text", x=-2.8, y=-28.5, label = "MLD_I_lo", size=5, color="black")+
+    annotate("text", x=-2.8, y=-28.5, label = "MLD[I_L]", size=5, color="black", parse = TRUE)+
     
     geom_point(data = df, aes(x = x, y = -30.5, colour = q_mld_e_up), size = 7, shape = 19)+
-    annotate("text", x=-2.8, y=-30.5, label = "MLD_E_up", size=5, color="black")+
+    annotate("text", x=-2.8, y=-30.5, label = "MLD[E_U]", size=5, color="black", parse = TRUE)+
     
     geom_point(data = df, aes(x = x, y = -31.5, colour = q_mld_e_lo), size = 7, shape = 19)+
-    annotate("text", x=-2.8, y=-31.5, label = "MLD_E_lo", size=5, color="black")+
+    annotate("text", x=-2.8, y=-31.5, label = "MLD[E_L]", size=5, color="black", parse = TRUE)+
     
     geom_point(data = df, aes(x = x, y = -33.5, colour = q_mld_ei_up), size = 7, shape = 19)+
-    annotate("text", x=-2.8, y=-33.5, label = "MLD_E/I_up", size=5, color="black")+
+    annotate("text", x=-2.8, y=-33.5, label = "MLD[E/I_U]", size=5, color="black", parse = TRUE)+
     
     geom_point(data = df, aes(x = x, y = -34.5, colour = q_mld_ei_lo), size = 7, shape = 19)+
-    annotate("text", x=-2.8, y=-34.5, label = "MLD_E/I_lo", size=5, color="black")+
+    annotate("text", x=-2.8, y=-34.5, label = "MLD[E/I_L]", size=5, color="black", parse = TRUE)+
     
     geom_point(data = df, aes(x = x, y = -36.5, colour = q_mld_i_bias), size = 7, shape = 19)+
-    annotate("text", x=-2.8, y=-36.5, label = "MLD_I_bias", size=5, color="black")+
+    annotate("text", x=-2.8, y=-36.5, label = "MLD[I_BIAS]", size=5, color="black", parse = TRUE)+
     
     geom_point(data = df, aes(x = x, y = -37.5, colour = q_mld_e_bias), size = 7, shape = 19)+
-    annotate("text", x=-2.8, y=-37.5, label = "MLD_E_bias", size=5, color="black")+
+    annotate("text", x=-2.8, y=-37.5, label = "MLD[E_BIAS]", size=5, color="black", parse = TRUE)+
     
     geom_point(data = df, aes(x = x, y = -38.5, colour = q_mld_ei_bias), size = 7, shape = 19)+
-    annotate("text", x=-2.8, y=-38.5, label = "MLD_E/I_bias", size=5, color="black")+
+    annotate("text", x=-2.8, y=-38.5, label = "MLD[E/I_BIAS]", size=5, color="black", parse = TRUE)+
     
     
     
     
     
-    geom_segment(aes(x=10.5, y=-39, xend=10.5, yend=0), color="blue")+
+    geom_segment(aes(x=10.5, y=-39, xend=10.5, yend=10), color="blue")+
   
     scale_colour_gradient(low = "green", high = "hotpink", na.value = "white")+
     
